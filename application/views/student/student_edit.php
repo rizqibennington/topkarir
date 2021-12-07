@@ -8,7 +8,6 @@
 
         <?php
             echo validation_errors();
-            //buat message npm
             if(!empty($message)) {
             echo $message;
             }

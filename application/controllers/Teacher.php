@@ -60,7 +60,6 @@ class Teacher extends CI_Controller {
                 // echo "masuk"; die();
                 $id = $this->input->post('id');
                 $cek = $this->Mod_teacher->cekTeacher($id);
-                //cek npm yg sudah digunakan
                 if($cek->num_rows() > 0){
                     $data['message'] = "<div class='alert alert-block alert-danger'>
                     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -141,8 +140,7 @@ class Teacher extends CI_Controller {
 
     public function delete()
     {
-        // $npm  = $this->uri->segment(3);
-
+     
         $id = $this->input->post('kode');
         
         $this->Mod_teacher->deleteTeacher($id, 'mst_teacher');
