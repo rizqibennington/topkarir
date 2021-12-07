@@ -26,8 +26,9 @@
         <div class="panel panel-primary">
 
             <div class="panel-heading">
-                Teacher Data
+                Teacher Data 
             </div>
+            <?php $idsekarang = $this->session->userdata['id']; ?>
             <!-- /.panel-heading -->
             <div class="panel-body">
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
@@ -51,8 +52,10 @@
                                         <td class="text-center">
                                  
                                 <a href="<?php echo base_url('teacher/edit/'.$row->id) ?>" name="edit" class="btn btn-warning btn-sm"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+                                <?php if($idsekarang==$row->id){
+                                     }else{?>
                                 <a href="#" name="<?php echo $row->nama;?>" class="hapus btn btn-danger btn-sm" kode="<?php echo $row->id;?>"><i class="glyphicon glyphicon-trash"></i> Hapus</a>
-                               
+                               <?php } ?>
                             </td>
                                     </tr>
                                 <?php $no++; } ?>    

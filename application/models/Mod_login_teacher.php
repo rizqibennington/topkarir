@@ -19,6 +19,10 @@ class Mod_login_teacher extends CI_Model {
     {
         return $this->db->get_where('mst_teacher', array('id' => $id));
     }
+    function check_pw($password)
+    {
+        return $this->db->get_where('mst_teacher', array('password' => $password));
+    }
 
 }
 

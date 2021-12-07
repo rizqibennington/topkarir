@@ -30,7 +30,6 @@ class Login_student extends CI_Controller {
 
                     //cek verfied bycrpt menyamakan data yg di input dengan ada yg di database 
                     $db = $this->Mod_login_student->check_db($id)->row();
-        
                      if(hash_verified($this->input->post('password'), $db->password)) {
 
                         $userdata = array(
