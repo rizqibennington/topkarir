@@ -13,7 +13,6 @@ class Teacher extends CI_Controller {
     public function index()
     {
         $data['teacher']      = $this->Mod_teacher->getAll();
-        // print_r($data['countanggota']); die();
         if($this->uri->segment(3)=="create-success") {
             $data['message'] = "<div class='alert alert-block alert-success'>
             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -163,5 +162,4 @@ class Teacher extends CI_Controller {
 
 }
 
-/* End of file Anggota.php */
  

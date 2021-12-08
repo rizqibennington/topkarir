@@ -119,10 +119,6 @@ $(document).ready(function() {
 </script>
 
 <script type="text/javascript">
-    // function confirmDelete()
-    // {
-    //     return confirm("Apakah anda yakin ingin menghapus data anggota")
-    // }
 
     $(function(){
         $(".hapus").click(function(){

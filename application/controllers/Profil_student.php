@@ -80,6 +80,4 @@ class Profil_Student extends CI_Controller {
 
 
 }
-
-/* End of file Anggota.php */
  

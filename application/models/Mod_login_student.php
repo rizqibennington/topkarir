@@ -5,9 +5,6 @@ class Mod_login_student extends CI_Model {
 
     function Auth($id, $password)
     {
-        // //query native coba sql injection
-        // $login = "SELECT * FROM petugas WHERE username = '$username' AND password = '$password' "; 
-        // return $this->db->query($login);
 
         //menggunakan active record . untuk menghindari sql injection
         $this->db->where("id", $id);
